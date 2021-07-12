@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+/*背景の色を指定します。*/
+body{
+  background-color:gray;
+}
+/*ヘッダーの背景を設定*/
+header{
+  background-color:white;
+}
+header h1{
+  margin-top: 0;
+  text-align: center;
+  font-size: 60px;
+  padding-top: 90px;
+  height:100px;
+}
+header a{
+  color:black;
+  text-decoration: none;
+  display:inline-block;
+}
+.main-navi{
+  border-top: solid 2px gray;
+}
+ul{
+  display:flex;
+  justify-content:center;
+}
+header li{
+  list-style: none;
+  border-radius: 4px;
+  margin: 10px 50px;
+  font-size: 30px;
+  padding:0 4px;
+  opacity: 0.8;
+  position: relative;
+}
+header li:hover{
+  opacity: 1;
+}
+header li::after{
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  content: "";
+  width:100%;
+  height:2px;
+  background:black;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s
+}
+
+header li:hover::after{
+  bottom: -1px;
+  opacity: 1;
+  visibility: visible;
+}
+
+/*メイン設定*/
+.main{
+  display: flex;
+  justify-content: space-between;
+
+}
+/*メイン記事設定*/
+.main-article{
+  width:60%;
+}
+/*記事１*/
+.article1{
+  background-color: white;
+  border:solid 2px black;
+  height:250px;
+  margin-left: 20px;
+}
+.article-img {
+  width:40%;
+  height: 230px;
+  margin: 10px;
+}
+.outline{
+  float: right;
+  width:50%;
+  margin: 0 auto;
+  height:230px;
+}
+.category{
+  align-items: end;
+  margin-bottom: 1px;
+  padding: 1px;
+  border:solid 2px black;
+}
+
+/*記事２*/
+
+
+/*サブの設定*/
+/*自己紹介の設定*/
+.sub-article{
+  width:38%;
+}
+.self-introduction{
+  height: 300px;
+  background-color: white;
+  margin-right: 20px;
+  border:solid 2px black;
+  text-align: center;
+}
